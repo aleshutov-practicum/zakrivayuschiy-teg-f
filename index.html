@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon-apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +14,50 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="logo-container">
+        <h1 class="logo-h1">&lt;/HTML&gt;</h1>
+        <p class="logo-p">закрывающий тег</p>
+      </div>
+    </header>
+    <main class="main">
+      <article class="card">
+        <h2 class="card-header">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card-image-container">
+          <img class="card-image" src="./images/image.jpg" />
+          <p class="card-image-label">&lt;/HTML&gt;</p>
+        </div>
+        <div class="card-content-container">
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p>Место для ваших воспоминаний о начале обучения.</p>
+          <div class="card-buttons-container">
+            <button>Q</button>
+            <button type="button" class="button card__like-button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <button type="button" class="button footer__button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+        >
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на&nbsp;память</span>
+      </button>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
