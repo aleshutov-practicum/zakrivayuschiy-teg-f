@@ -6,6 +6,8 @@
   --accent-font: "PressStart2P-Regular";
   --accent-font-weight: 400;
 
+  --lable-outline: #fff;
+
   --grid-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0px,
