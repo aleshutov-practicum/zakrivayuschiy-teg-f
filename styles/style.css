@@ -39,7 +39,7 @@
   align-items: center;
   gap: 20px;
 
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   background-color: #fff;
   border: 2px solid #000;
   width: var(--width-main);
@@ -47,11 +47,11 @@
   padding-bottom: clamp(7.5rem, 7.28rem + 0.939vw, 8.125rem);
 }
 
-.logo-h1 {
+.logo-title {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
 }
 
-.logo-p {
+.logo-text {
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
@@ -97,17 +97,17 @@
   top: 25px;
   right: 25px;
   opacity: 0.5;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-weight: var(--main-font-weight-normal);
   font-size: 14px;
   text-shadow: 0 0 1px var(--lable-outline);
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--lable-outline);
 }
 
-@supports (text-stroke: 1px var(--lable-outline)) {
+@supports (-webkit-text-stroke: 1px var(--lable-outline)) {
   .card-image-label {
-    text-stroke: 1px var(--lable-outline);
+    -webkit-text-stroke: 1px var(--lable-outline);
+    text-shadow: none;
   }
 }
 
@@ -125,7 +125,6 @@
   display: flex;
   justify-content: end;
   gap: 4px;
-  height: 38px;
 }
 
 .card__icon-button {
@@ -248,7 +247,7 @@
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-weight: var(--accent-font-weight);
   font-size: 14px;
   line-height: 90%;
@@ -265,13 +264,7 @@
   color: #fff;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.footer-button {
+.save-button {
   gap: 8px;
   padding: 15px 18px;
 }
@@ -317,7 +310,7 @@
 }
 
 .dialog-text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   font-variation-settings: "wght" var(--accent-font-weight);
   text-transform: uppercase;
@@ -343,19 +336,19 @@
   filter: sepia(81%);
 }
 
-.filter-fancy1 {
+.filter-smurf-color {
   filter: blur(1.4px) contrast(2.3) brightness(1.3) grayscale(0.58)
     hue-rotate(197deg) saturate(1.4);
 }
 
-.filter-fancy2 {
+.filter-accent-blue {
   filter: blur(1.6px) grayscale(0.23) hue-rotate(20deg) invert(0.12)
     saturate(2.3) contrast(2.8) sepia(0.08) brightness(0.6);
 }
-.filter-fancy3 {
+.filter-accent-fire {
   filter: contrast(3) blur(10px) saturate(3);
 }
-.filter-fancy4 {
+.filter-neon-invert {
   filter: contrast(3) blur(2.4px) saturate(3) brightness(0.5);
 }
 .filter-hue {
@@ -366,7 +359,7 @@
 }
 
 @media (width <= 376px) {
-  .footer-button {
+  .save-button {
     flex-direction: column;
     min-height: 84px;
     width: 306px;

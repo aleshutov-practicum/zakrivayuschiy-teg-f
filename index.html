@@ -16,8 +16,8 @@
   <body class="page">
     <header class="header">
       <div class="logo-container">
-        <h1 class="logo-h1">&lt;/HTML&gt;</h1>
-        <p class="logo-p">закрывающий тег</p>
+        <h1 class="logo-title">&lt;/HTML&gt;</h1>
+        <p class="logo-text">закрывающий тег</p>
       </div>
     </header>
     <main class="main">
@@ -45,6 +45,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -111,6 +112,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -154,7 +156,7 @@
         <h2 class="card-header">1 спринт: А если не получится?</h2>
         <div class="card-image-container">
           <img
-            class="card-image filter-fancy1"
+            class="card-image filter-smurf-color"
             loading="lazy"
             src="./images/muppet.jpg"
             alt="Картинка с персонажем в стиле маппет-шоу в очках "
@@ -175,6 +177,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -218,7 +221,7 @@
         <h2 class="card-header">2 спринт: Погоня за идеалом</h2>
         <div class="card-image-container">
           <img
-            class="card-image filter-fancy2"
+            class="card-image filter-accent-blue"
             loading="lazy"
             src="./images/headphones.jpg"
             alt="Наушники лежащие на клавиатуре"
@@ -241,6 +244,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -284,7 +288,7 @@
         <h2 class="card-header">2 спринт: О тех, кто рядом</h2>
         <div class="card-image-container">
           <img
-            class="card-image filter-fancy3"
+            class="card-image filter-accent-fire"
             loading="lazy"
             src="./images/buddy.jpg"
             alt="Тень фигуры в шляпе приветствующая рукой вверх"
@@ -307,6 +311,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -350,7 +355,7 @@
         <h2 class="card-header">3 спринт: Обходные стратегии</h2>
         <div class="card-image-container">
           <img
-            class="card-image filter-fancy4"
+            class="card-image filter-neon-invert"
             loading="lazy"
             src="./images/dounut.jpg"
             alt="пончик в глазури"
@@ -371,6 +376,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -434,6 +440,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -498,6 +505,7 @@
             <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
+                aria-hidden="true"
                 width="39"
                 height="36"
                 viewBox="0 0 39 36"
@@ -537,11 +545,9 @@
           </div>
         </div>
       </article>
-    </main>
-    <footer class="footer">
       <button
         type="button"
-        class="button footer-button"
+        class="button save-button"
         onclick="window['dialog-id'].showModal();"
       >
         <svg
@@ -575,7 +581,8 @@
           <span class="button__text">ок</span>
         </button>
       </dialog>
-    </footer>
+    </main>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
