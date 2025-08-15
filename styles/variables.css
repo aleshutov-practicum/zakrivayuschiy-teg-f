@@ -23,4 +23,7 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --block-width: clamp(320px, 80vw, 700px);
+
+  --animation-contour-color: black;
+  --animation-fill-color: #ff0000;
 }
